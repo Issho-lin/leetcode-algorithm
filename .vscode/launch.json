@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\二叉树的最大深度.js"
+            "program": "${workspaceFolder}\\两数之和 II - 输入有序数组.js"
         }
     ]
 }
