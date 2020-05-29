@@ -11,7 +11,10 @@
  */
 const trailingZeroes = n => {
     let res = 0
-    while (n % 5 === 0) {
+    while (n >= 5) {
+        if (n % 5 !== 0) {
+            n -= n % 5
+        }
         n /= 5
         res += n
     }
