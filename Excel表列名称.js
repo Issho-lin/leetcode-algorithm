@@ -21,7 +21,17 @@
  * @return {string}
  */
 const convertToTitle = n => {
-
+    let res = ''
+    while (n !== 0) {
+        let char = n % 26
+        n = Math.floor(n / 26)
+        if (char === 0) {
+            char = 26
+            n--
+        }
+        res = String.fromCharCode(char + 64) + res
+    }
+    return res
 }
 
-console.log(convertToTitle(1))
+console.log(convertToTitle(18277))
